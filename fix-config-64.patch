@@ -1,0 +1,11 @@
+--- config.mk	2022-10-04 13:45:59.000000000 -0400
++++ 64config.mk	2025-01-10 16:20:34.829538947 -0500
+@@ -12,7 +12,7 @@
+ 
+ # includes and libs
+ INCS = -I. -I/usr/include -I${X11INC}
+-LIBS = -L/usr/lib -lc -lcrypt -L${X11LIB} -lX11 -lXext -lXrandr
++LIBS = -L/usr/lib64 -lc -lcrypt -L${X11LIB} -lX11 -lXext -lXrandr
+ 
+ # flags
+ CPPFLAGS = -DVERSION=\"${VERSION}\" -D_DEFAULT_SOURCE -DHAVE_SHADOW_H
